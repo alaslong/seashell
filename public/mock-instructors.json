@@ -1,0 +1,40 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "name": { "first": "Elvira", "last": "Mayr" },
+      "email": "elvira.mayr@gmx.de",
+      "phone": "+49 150 123 1234",
+      "picture": "https://images.squarespace-cdn.com/content/v1/58963f12197aeaed112d47b4/1574091028084-GN1KDJDTNZL3W25Q0FN9/Steph+new+headshot.jpg",
+      "languages": ["English", "German"],
+      "classes": ["Yin", "Kundalini", "Vinyasa"]
+    },
+    {
+      "id": 2,
+      "name": { "first": "Sara", "last": "Velasquez" },
+      "email": "sara.velasquez@icloud.com",
+      "phone": "+49 151 444 5678",
+      "picture": "https://cdn.yogajournal.com/wp-content/uploads/2022/03/350-yoga-journal-2022-C-andrew-clark-BC8I1025-1-1.jpg",
+      "languages": ["English", "German", "Spanish"],
+      "classes": ["Yin", "Pilates", "Ashtanga"]
+    },
+    {
+      "id": 3,
+      "name": { "first": "Jason", "last": "Solis" },
+      "email": "jsolis@gmail.com",
+      "phone": "+49 150 000 1111",
+      "picture": "https://t4.ftcdn.net/jpg/05/42/87/55/360_F_542875592_W7J8A4snWY9dxaUT3RrcZNVeLQuGAJUJ.jpg",
+      "languages": ["English", "Spanish", "French"],
+      "classes": ["Flow", "Vinyasa"]
+    },
+    {
+      "id": 4,
+      "name": { "first": "Paula", "last": "Eckhart" },
+      "email": "paulae@hotmail.com",
+      "phone": "+49 151 0011 5678",
+      "picture": "https://www.leisureopportunities.co.uk/images/2022/537355_375818.jpg",
+      "languages": ["English", "German"],
+      "classes": ["Yin"]
+    }
+  ]
+}

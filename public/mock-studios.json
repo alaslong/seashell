@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "name": "Studio Flow",
+      "location": {
+        "street": { "number": 15, "name": "Hobrechtstraße" },
+        "city": "Berlin",
+        "neighbourhood": "Neukölln",
+        "state": "Berlin",
+        "country": "Germany",
+        "postcode": 12047
+      },
+      "contact": {
+        "phone": "+49 151 2000 1000",
+        "email": "anna@studioflow.com",
+        "main-contact": "Anna Müller"
+      },
+      "picture": "https://www.mrduesseldorf.de/wp-content/uploads/2023/03/1397768_616217138442935_761406132_o.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Loft 86",
+      "location": {
+        "street": { "number": 86, "name": "Torstraße" },
+        "city": "Berlin",
+        "neighbourhood": "Mitte",
+        "state": "Berlin",
+        "country": "Germany",
+        "postcode": 10119
+      },
+      "contact": {
+        "phone": "+49 151 2000 1000",
+        "email": "info@loft86.de",
+        "main-contact": "Alexander Giess"
+      },
+      "picture": "https://us.images.westend61.de/0000774386pw/empty-loft-3d-rendering-UWF01129.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Lightspace",
+      "location": {
+        "street": { "number": 93, "name": "Schönhauser Allee" },
+        "city": "Berlin",
+        "neighbourhood": "Prenzlauer Berg",
+        "state": "Berlin",
+        "country": "Germany",
+        "postcode": 10439
+      },
+      "contact": {
+        "phone": "+49 151 2000 1000",
+        "email": "erika@lightspaceberlin.com",
+        "main-contact": "Erika Johnson"
+      },
+      "picture": "https://www.paivcreative.co.uk/wp-content/uploads/2021/06/5e53e8bf3b798610e68e26f6_TWLP19148_0000_TheYogaRoom-102.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Breath Room",
+      "location": {
+        "street": { "number": 19, "name": "Wühlischstraße" },
+        "city": "Berlin",
+        "neighbourhood": "Friedrichshain",
+        "state": "Berlin",
+        "country": "Germany",
+        "postcode": 10119
+      },
+      "contact": {
+        "phone": "+49 151 2000 1000",
+        "email": "contact@breathroom.de",
+        "main-contact": "Chelsea Edison"
+      },
+      "picture": "https://assets.website-files.com/5f7533fe3ad0a039ce5f1006/61e5bdcb3a533b35dc58292d_sol-yoga-fullres-4%20(1).jpg"
+    }
+  ]
+}
