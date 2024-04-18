@@ -5,10 +5,11 @@ import LandingPage from './pages/LandingPage';
 import InstructorsPage from './pages/InstructorsPage';
 import InstructorDetailsPage from './pages/InstructorDetailsPage';
 import StudiosPage from './pages/StudiosPage';
+import HowItWorksPage from './pages/HowItWorksPage';
 import WorkshopsPage from './pages/WorkshopsPage';
 
 
-function App() {
+const App = () => {
   
 
   return (
@@ -16,6 +17,7 @@ function App() {
     <NavBar />
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/how" element={<HowItWorksPage />} />
       <Route path="/instructors" element={<InstructorsPage />} />
       <Route path="/instructor/:instructorId" element={<InstructorDetailsPage />} />
       <Route path="/studios" element={<StudiosPage />} />

@@ -12,8 +12,8 @@ const LandingPage = () => {
 <div className="hero min-h-[95%]">
   <div className="hero-content text-center">
     <div className="max-w-3xl">
-      <h1 className="text-5xl font-bold my-6">we make mindfulness accessible</h1>
-      <button className="btn btn-lg my-6 ">book a wellness experience for your team</button>
+      <h1 className="text-5xl font-bold my-6">we make wellness accessible</h1>
+      <button className="btn btn-lg my-6 ">book an experience for your team today</button>
       {/* <p className="text-2xl my-10">our approach to corporate wellbeing is as unique as your business</p> */}
       
     </div>

@@ -3,13 +3,20 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div className="navbar bg-base-100">
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost">
+         <img src="./src/assets/logo.png" />
+        </button>
+      </div>
       <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-xl text-slate-200">seashell</Link>
+        <Link to="/" className="btn btn-ghost text-xl text-slate-200">
+          seashell
+        </Link>
       </div>
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1">
-        <li>
-            <a>how it works</a>
+          <li>
+            <Link to="/how">how it works</Link>
           </li>
           <li>
             <Link to="/instructors">instructors</Link>
