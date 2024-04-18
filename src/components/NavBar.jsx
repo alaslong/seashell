@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
 const NavBar = () => {
   return (
     <div className="navbar bg-base-100">
       <div class="flex-none">
         <button class="btn btn-square btn-ghost">
-         <img src="./src/assets/logo.png" />
+         <img src={logo} />
         </button>
       </div>
       <div className="flex-1">
