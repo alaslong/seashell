@@ -7,7 +7,7 @@ const InstructorCard = ({ instructor }) => {
       className="card bordered m-4 p-0 w-64 flex-col justify-center items-center bg-slate-300"
     >
       <figure>
-        <img src={instructor.picture} alt="Profile picture" className="w-64 h-64 object-cover"/>
+        <img src={instructor.picture} alt="Profile picture" className="w-64 h-64 object-cover grayscale"/>
       </figure>
       <div className="card-body flex flex-col w-full">
         <h2 className="card-title text-black">

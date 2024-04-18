@@ -33,7 +33,7 @@ const InstructorDetailsPage = () => {
       <img
         src={instructor.picture}
         alt="Profile picture"
-        className="w-64 h-64 object-cover"
+        className="w-64 h-64 object-cover grayscale"
       />
       <div className="flex flex-col justify-between items-start w-[75%]">
         <div className="flex flex-col gap-4 items-start">
