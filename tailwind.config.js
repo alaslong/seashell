@@ -11,6 +11,16 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    themes: ["light", "dark", "aqua"],
+    themes: [
+      {
+        custom: {
+          "primary": "#1C4973",
+          "secondary": "#f6d860",
+          "accent": "#216869",
+          "neutral": "#BDD7EF",
+          "base-100": "#CEE1F3",
+        }
+      }
+    ],
   },
 }

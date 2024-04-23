@@ -10,26 +10,26 @@ const NavBar = () => {
         </button>
       </div>
       <div className="flex-1">
-        <Link to="/" className="btn btn-ghost text-xl text-slate-200">
+        <Link to="/" className="btn btn-ghost text-xl text-primary">
           seashell
         </Link>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 text-primary">
           <li>
-            <Link to="/how">how it works</Link>
+            <Link to="/how">How It Works</Link>
           </li>
           <li>
-            <Link to="/instructors">instructors</Link>
+            <Link to="/instructors">Instructors</Link>
           </li>
           <li>
-            <Link to="/workshops">workshops</Link>
+            <Link to="/workshops">Workshops</Link>
           </li>
           <li>
-            <Link to="/studios">studios</Link>
+            <Link to="/studios">Studios</Link>
           </li>
           <li>
-            <a>faq</a>
+            <a>FAQ</a>
           </li>
         </ul>
       </div>

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import WorkshopCard from "../components/WorkshopCard";
 
-const WorkshopsPage = () => {
+const WorkshopsSection = () => {
 
   const retrieveWorkshops = async () => {
     const response = await axios.get(
@@ -35,4 +35,4 @@ const WorkshopsPage = () => {
   );
 };
 
-export default WorkshopsPage;
+export default WorkshopsSection;

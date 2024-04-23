@@ -2,7 +2,7 @@ import axios from "axios";
 import { useQuery } from "react-query";
 import InstructorCard from "../components/InstructorCard";
 
-const InstructorsPage = () => {
+const InstructorsSection = () => {
 
   const retrieveInstructors = async () => {
     const response = await axios.get(
@@ -25,6 +25,8 @@ const InstructorsPage = () => {
   }
 
   return (
+    <div className="min-h-[50%] mb-28">
+      <h2 className="text-center text-primary text-3xl mb-10">Instructors</h2>
     <div className="flex flex-wrap w-full justify-center">
       {instructors.map((instructor) => {
         return (
@@ -32,7 +34,8 @@ const InstructorsPage = () => {
         );
       })}
     </div>
+    </div>
   );
 };
 
-export default InstructorsPage;
+export default InstructorsSection;

@@ -1,4 +1,4 @@
-const LandingPage = () => {
+const HeroSection = () => {
   return (
     // <div className="flex flex-col justify-evenly items-center h-[95%] w-full">
     //   <h2 className="text-5xl">We make mindful movement friendly and accessible.</h2>
@@ -12,8 +12,8 @@ const LandingPage = () => {
 <div className="hero min-h-[95%]">
   <div className="hero-content text-center">
     <div className="max-w-3xl">
-      <h1 className="text-5xl font-bold my-6">we make wellness accessible</h1>
-      <button className="btn btn-lg my-6 ">book an experience for your team today</button>
+      <h1 className="text-5xl text-primary font-bold my-6">We simplify <span className="text-accent">wellness.</span></h1>
+      <button className="btn btn-neutral text-primary btn-lg my-6 ">Take care of your team today.</button>
       {/* <p className="text-2xl my-10">our approach to corporate wellbeing is as unique as your business</p> */}
       
     </div>
@@ -22,4 +22,4 @@ const LandingPage = () => {
   );
 };
 
-export default LandingPage;
+export default HeroSection;
