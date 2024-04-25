@@ -7,7 +7,7 @@ const WorkshopCard = ({ workshop }) => {
       className="card bordered m-4 p-0 w-64 flex-col justify-center items-center"
     >
       <figure>
-        <img src={workshop.image} alt="Workshop picture" className="w-64 h-64 object-cover"/>
+        {workshop?.image && <img src={workshop.image} alt="Workshop picture" className="w-64 h-64 object-cover"/>}
       </figure>
       <div className="card-body flex flex-col w-full">
         <h2 className="card-title">

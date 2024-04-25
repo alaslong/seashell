@@ -1,8 +1,10 @@
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { useQuery } from "react-query";
+import WorkshopCard from "../components/WorkshopCard";
 
 const InstructorDetailsPage = () => {
+
   const { instructorId } = useParams();
 
   const getInstructorByInstructorId = async () => {
@@ -14,18 +16,30 @@ const InstructorDetailsPage = () => {
 
   const {
     data: instructor,
-    isLoading,
-    error,
+    isLoading: isLoadingInstructor,
+    error: instructorError,
   } = useQuery(["instructorData", instructorId], getInstructorByInstructorId);
 
-  if (isLoading) {
+  const getWorkshopsByInstructorId = async () => {
+    const response = await axios.get(
+      `https://seashell-server.fly.dev/api/instructor/${instructorId}/workshops`
+    );
+    return response.data;
+  };
+
+  const {
+    data: workshops,
+    isLoading: isLoadingWorkshops,
+    error: workshopsError,
+  } = useQuery(["workshopsData", instructorId], getWorkshopsByInstructorId);
+
+  if (isLoadingInstructor || isLoadingWorkshops) {
     return <span className="loading loading-spinner loading-lg"></span>;
   }
-  if (error) {
+  if (instructorError || workshopsError)  {
     return <div>Error</div>;
   }
 
-  console.log(instructor);
 
   return (
     <>
@@ -41,18 +55,18 @@ const InstructorDetailsPage = () => {
               {instructor.name.first} {instructor.name.last}
             </h2>
             <div className="flex text-sm">
-              <span>languages:&nbsp;</span>
+              <span>Languages:&nbsp;</span>
               {instructor.languages.map((language, index) => (
                 <span className="">
-                  {language.toLowerCase()}
+                  {language}
                   {index < instructor.languages.length - 1 ? `,` : ``}&nbsp;
                 </span>
               ))}
             </div>
             <div className="flex gap-1">
               {instructor.classes.map((course) => (
-                <span className="badge badge-ghost rounded-md">
-                  {course.toLowerCase()}
+                <span className="badge badge-sm badge-outline text-black rounded-3xl p-3">
+                  {course}
                 </span>
               ))}
             </div>
@@ -60,7 +74,14 @@ const InstructorDetailsPage = () => {
           <div className="text-left mt-10">
             <span>{instructor.description}</span>
           </div>
-          <h3 className="text-3xl mt-10">workshops:</h3>
+          <h3 className="text-3xl mt-10">Workshops:</h3>
+          <div className="flex flex-wrap w-full justify-center">
+      {workshops.map((workshop) => {
+        return (
+          <WorkshopCard workshop={workshop} />
+        );
+      })}
+    </div>
         </div>
       </div>
     </>
