@@ -5,17 +5,19 @@ import InstructorsSection from "../sections/InstructorsSection";
 import StudiosSection from "../sections/StudiosSection";
 import WorkshopsSection from "../sections/WorkshopsSection";
 import NavBar from "../components/NavBar"
+import FooterSection from "../sections/FooterSection";
 
 const MainPage = () => {
     return (
         <>
         <NavBar />
-        
+
         <HeroSection />
         <HowSection />
         <InstructorsSection />
         {/* <StudiosSection /> */}
         <FAQSection />
+        <FooterSection />
         
 
         </>

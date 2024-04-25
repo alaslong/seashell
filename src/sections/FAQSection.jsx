@@ -1,6 +1,6 @@
 const FAQSection = () => {
   return (
-    <div className="w-5/6 m-auto h-screen flex flex-col justify-center gap-3" id="faq">
+    <div className="w-5/6 m-auto h-[95%] flex flex-col justify-center gap-3" id="faq">
         <h2 className="text-center text-primary text-3xl my-20">Have more questions?</h2>
       <div
         tabIndex={0}
