@@ -2,8 +2,7 @@ const HowSection = () => {
   return (
     <div className="flex flex-col justify-center text-left h-screen text-lg text-primary" id="how">
       <h2 className="text-3xl my-20 text-center">
-        We <span className="text-accent">connect</span> wellness providers with businesses organising events for
-        their employees.
+      We make it easy for businesses to boost employee wellbeing with curated experiences.
       </h2>
 
       <div className="flex justify-evenly">
