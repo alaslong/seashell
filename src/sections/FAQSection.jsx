@@ -37,7 +37,7 @@ const FAQSection = () => {
         className="collapse collapse-arrow border border-base-300 bg-base-200"
       >
         <div className="collapse-title text-sm font-medium">
-          We have the space for a class/workshop at our office, what do we need
+          We have the space for a workshop at our office, what do we need
           to do?
         </div>
         <div className="collapse-content text-sm">
@@ -59,10 +59,10 @@ const FAQSection = () => {
         </div>
         <div className="collapse-content text-sm">
           <p>
-            Make the teacher aware of all injuries before the class. We advise
+            Make the teacher aware of all injuries before the workshop. We advise
             everyone to listen to what their bodies are telling them and move
             accordingly. Just like going to the office to work, please do not
-            come to the class or to a workshop if you have a cold or flu, as you
+            come to the workshop if you have a cold or flu, as you
             risk harm to yourself and others around you. Stay home and rest.
           </p>
         </div>
@@ -72,7 +72,7 @@ const FAQSection = () => {
         className="collapse collapse-arrow border border-base-300 bg-base-200"
       >
         <div className="collapse-title text-sm font-medium">
-          How do I book a class or a workshop?
+          How do I book a workshop?
         </div>
         <div className="collapse-content text-sm">
           <p>

@@ -30,7 +30,7 @@ const InstructorsSection = () => {
     <div className="flex flex-wrap w-full justify-center">
       {instructors.map((instructor) => {
         return (
-          <InstructorCard instructor={instructor} />
+          <InstructorCard instructor={instructor} key={instructor._id}/>
         );
       })}
     </div>

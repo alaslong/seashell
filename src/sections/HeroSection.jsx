@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const HeroSection = () => {
   return (
     // <div className="flex flex-col justify-evenly items-center h-[95%] w-full">
@@ -13,7 +15,7 @@ const HeroSection = () => {
   <div className="hero-content text-center">
     <div className="max-w-4xl">
       <h1 className="text-6xl text-primary font-bold my-6">We simplify B2B <span className="text-accent">wellness</span>.</h1>
-      <button className="btn btn-neutral text-primary btn-lg my-7 ">Take care of your team today<span className="text-sm bg-primary text-neutral border border-primary rounded-3xl px-1">&rarr;</span></button>
+      <Link to="/book" className="btn btn-neutral text-primary btn-lg my-7 ">Take care of your team today<span className="text-sm bg-primary text-neutral border border-primary rounded-3xl px-1">&rarr;</span></Link>
       {/* <p className="text-2xl my-10">our approach to corporate wellbeing is as unique as your business</p> */}
       
     </div>
