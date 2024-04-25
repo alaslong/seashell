@@ -1,7 +1,7 @@
 const FAQSection = () => {
   return (
-    <div className="w-5/6 m-auto h-[95%] flex flex-col justify-center gap-3" id="faq">
-        <h2 className="text-center text-primary text-3xl my-20">Have more questions?</h2>
+    <div className="w-5/6 m-auto h-[95%] flex flex-col justify-center gap-3 text-primary" id="faq">
+        <h2 className="text-center text-primary text-3xl my-20 font-semibold">Have more questions?</h2>
       <div
         tabIndex={0}
         className="collapse collapse-arrow border border-base-300 bg-base-200"

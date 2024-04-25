@@ -1,7 +1,7 @@
 const HowSection = () => {
   return (
     <div className="flex flex-col justify-center text-left h-screen text-lg text-primary" id="how">
-      <h2 className="text-3xl my-20 text-center">
+      <h2 className="text-3xl my-20 text-center font-semibold">
       We make it easy for businesses to <span className="text-accent">boost employee wellbeing</span> with curated experiences.
       </h2>
 
