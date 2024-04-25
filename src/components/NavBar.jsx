@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <nav className="navbar bg-base-100 fixed top-0 z-50">
       <div class="flex-none">
-        <button class="btn btn-square btn-ghost">
+        <button class="btn btn-square btn-ghost m-1">
           <img src={logo} />
         </button>
       </div>
