@@ -14,7 +14,7 @@ const InstructorCard = ({ instructor }) => {
         <h3 className="card-title text-primary">
           {instructor.name.first}
         </h3>
-        <div className="flex justify-start gap-2">{instructor.classes.slice(0,1).map(course => <span className="badge badge-sm badge-outline badge-accent text-primary rounded-3xl p-3" key={course}>{course}</span>)}</div>
+        <div className="flex justify-start gap-2">{instructor.classes.map(course => <span className="badge badge-sm badge-outline badge-accent text-primary rounded-3xl p-3" key={course}>{course}</span>)}</div>
         
       </div>
     </Link>

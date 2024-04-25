@@ -29,37 +29,40 @@ const InstructorDetailsPage = () => {
 
   return (
     <>
-    <div className="flex w-full justify-between my-10">
-      <img
-        src={instructor.picture}
-        alt="Profile picture"
-        className="w-64 h-64 object-cover grayscale"
-      />
-      <div className="flex flex-col justify-between items-start w-[75%]">
-        <div className="flex flex-col gap-4 items-start">
-        <h2 className="text-4xl">
-          {instructor.name.first} {instructor.name.last}
-        </h2>
-        <div className="flex text-sm">
-          <span>languages:&nbsp;</span>
-          {instructor.languages.map((language, index) => (
-            <span className="">{language.toLowerCase()}{index < instructor.languages.length-1 ? `,` : ``}&nbsp;</span>
-          ))}
+      <div className="flex w-full justify-between p-28">
+        <img
+          src={instructor.picture}
+          alt="Profile picture"
+          className="w-64 h-64 object-cover grayscale"
+        />
+        <div className="flex flex-col justify-between items-start w-[75%]">
+          <div className="flex flex-col gap-4 items-start">
+            <h2 className="text-4xl">
+              {instructor.name.first} {instructor.name.last}
+            </h2>
+            <div className="flex text-sm">
+              <span>languages:&nbsp;</span>
+              {instructor.languages.map((language, index) => (
+                <span className="">
+                  {language.toLowerCase()}
+                  {index < instructor.languages.length - 1 ? `,` : ``}&nbsp;
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-1">
+              {instructor.classes.map((course) => (
+                <span className="badge badge-ghost rounded-md">
+                  {course.toLowerCase()}
+                </span>
+              ))}
+            </div>
           </div>
-        <div className="flex gap-1">
-          {instructor.classes.map((course) => (
-            <span className="badge badge-ghost rounded-md">{course.toLowerCase()}</span>
-          ))}
+          <div className="text-left mt-10">
+            <span>{instructor.description}</span>
           </div>
+          <h3 className="text-3xl mt-10">workshops:</h3>
         </div>
-        <div className="text-left"><span>{instructor.description}</span></div>
       </div>
-    </div>
-    <div className="w-full flex my-24">
-    <h3 className="text-3xl">
-        workshops:
-      </h3>
-    </div>
     </>
   );
 };
