@@ -9,7 +9,7 @@ const HeroSection = () => {
     // </div>
 
 
-<div className="hero min-h-[95%]">
+<div className="hero h-screen" id="">
   <div className="hero-content text-center">
     <div className="max-w-3xl">
       <h1 className="text-5xl text-primary font-bold my-6">We simplify B2B <span className="text-accent">wellness.</span></h1>

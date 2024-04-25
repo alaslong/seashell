@@ -25,8 +25,8 @@ const InstructorsSection = () => {
   }
 
   return (
-    <div className="min-h-[50%] mb-28">
-      <h2 className="text-center text-primary text-3xl mb-10">Instructors</h2>
+    <div className="h-screen flex flex-col justify-center w-5/6 m-auto" id="providers">
+      <h2 className="text-primary text-3xl text-center my-20">Here are a selection of providers we've partnered with.</h2>
     <div className="flex flex-wrap w-full justify-center">
       {instructors.map((instructor) => {
         return (

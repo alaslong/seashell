@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png";
+import { HashLink } from 'react-router-hash-link';
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100">
+    <nav className="navbar bg-base-100 fixed top-0 z-50">
       <div class="flex-none">
         <button class="btn btn-square btn-ghost">
-         <img src={logo} />
+          <img src={logo} />
         </button>
       </div>
       <div className="flex-1">
@@ -17,23 +18,26 @@ const NavBar = () => {
       <div className="flex-none">
         <ul className="menu menu-horizontal px-1 text-primary">
           <li>
-            <Link to="/how">How It Works</Link>
+            <HashLink smooth to="/#">Home</HashLink>
           </li>
           <li>
-            <Link to="/instructors">Instructors</Link>
+            <HashLink smooth to="/#how">How It Works</HashLink>
           </li>
           <li>
+            <HashLink smooth to="/#providers">Providers</HashLink>
+          </li>
+          {/*<li>
             <Link to="/workshops">Workshops</Link>
           </li>
           <li>
             <Link to="/studios">Studios</Link>
-          </li>
+  </li>*/}
           <li>
-            <a>FAQ</a>
+          <HashLink smooth to="/#faq">FAQ</HashLink>
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 
