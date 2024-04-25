@@ -11,9 +11,9 @@ const InstructorCard = ({ instructor }) => {
       </figure>
       <div className="card-body flex flex-col w-full">
         <h3 className="card-title text-primary">
-          {instructor.name.first} {instructor.name.last}
+          {instructor.name.first}
         </h3>
-        <div className="flex justify-start gap-1">{instructor.classes.map(course => <span className="badge badge-neutral text-primary rounded-xl">{course}</span>)}</div>
+        <div className="flex justify-start gap-2">{instructor.classes.map(course => <span className="badge badge-neutral bg-white border-none text-primary rounded-xl">{course}</span>)}</div>
         
       </div>
     </Link>
